@@ -7,9 +7,9 @@ async function main() {
  A ContractFactory in ethers.js is an abstraction used to deploy new smart contracts,
  so randomWinnerGame here is a factory for instances of our RandomWinnerGame contract.
  */
-  const randomWinnerGame = await ethers.getContractFactory("SmartLotteryV1");
+  const randomWinnerGame = await ethers.getContractFactory("SmartLotteryVRFv2Consumer");
   // deploy the contract
-  const deployedRandomWinnerGameContract = await randomWinnerGame.deploy();
+  const deployedRandomWinnerGameContract = await randomWinnerGame.deploy(4635);
 
   await deployedRandomWinnerGameContract.deployed();
 
