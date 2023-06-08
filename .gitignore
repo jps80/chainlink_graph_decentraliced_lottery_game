@@ -48,4 +48,8 @@ webapp/*.tsbuildinfo
 webapp/next-env.d.ts
 
 graph/test_smartlottery_v1/node_modules
-
+graph/smart_lottery_VR/node_modules
+graph/test_smartlottery_v1/generated
+graph/smart_lottery_VR/generated
+graph/test_smartlottery_v1/build
+graph/smart_lottery_VR/build
