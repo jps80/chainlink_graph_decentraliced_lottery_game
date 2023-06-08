@@ -7,6 +7,7 @@ export function FETCH_CREATED_GAME() {
             winner
             players
 			gameId
+            requestId
         }
     }`;
 }

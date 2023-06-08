@@ -3,7 +3,7 @@ import axios from "axios";
 export async function subgraphQuery(query) {
   try {
     const SUBGRAPH_URL =
-      "https://api.studio.thegraph.com/query/47227/test_smartlottery_v1/version/latest";
+      "https://api.studio.thegraph.com/query/47227/smart_lottery_vrf/v.0.0.4";
     const response = await axios.post(SUBGRAPH_URL, {
       query,
     });

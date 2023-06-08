@@ -240,13 +240,10 @@ describe("SmartLotteryV1", function () {
   let player1;
   let player2;
 
-  const NODE_HTTP_URL = process.env.NODE_HTTP_URL_MUMBAI
   const SMARTCONTRACT_DEPLOYED = process.env.SMARTCONTRACT_DEPLOYED_MUMBAI;
   
   before(async () => {
 
-    provider = new ethers.providers.JsonRpcProvider(NODE_HTTP_URL);
-    
     [_player1, _player2] = await ethers.getSigners();
     player1 = _player1;
     player2 = _player2;
